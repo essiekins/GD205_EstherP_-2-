@@ -5,11 +5,6 @@ public class BallMove : MonoBehaviour{
     InputAction moveAction;
     InputAction lookAction;
 
-    //used for wasd on ship [fingers crossed]
-    Vector2 _moveDirection;
-
-    public InputActionReference move;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){ 
         moveAction = InputSystem.actions.FindAction("Move");
@@ -40,9 +35,6 @@ public class BallMove : MonoBehaviour{
         //convert to 3d and modify look
         Vector3 look = new Vector3(rawLook.y,rawLook.x,0f);
         transform.Rotate(look);
-        
-        //wasd ship
-        _moveDirection = move.action.ReadValue<Vector2>();
     }
 
     void OnCollisionEnter(Collision colReport)

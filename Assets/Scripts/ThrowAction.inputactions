@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "name": "ThrowAction",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "becf1c82-1a2f-41d4-812a-da8b70db5be0",
+            "actions": [
+                {
+                    "name": "Throw",
+                    "type": "Button",
+                    "id": "a8a641fd-04cb-4d0e-b862-9fa40cc8ae1a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b0296335-259e-4379-a0a4-5424859c348e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -21,7 +21,7 @@ public class Seeker : MonoBehaviour
 
     void Update(){
         //wasd ship
-        _moveDirection = move.action.ReadValue<Vector2>();
+        //_moveDirection = move.action.ReadValue<Vector2>();
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class Seeker : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(targetDirection*speed); 
 
         //wasd ship
-        rb.velocity = new Vector2(x:_moveDirection.x * moveSpeed, y:_moveDicretion.y * moveSpeed);
+       // rb.linearVelocity = new Vector2(x:_moveDirection.x * moveSpeed, y:_moveDicretion.y * moveSpeed);
     }
     
 }
